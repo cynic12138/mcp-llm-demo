@@ -13,8 +13,6 @@
 ├── llm_client.py     # DashScope 接口调用客户端
 ├── server.py         # MCP 服务端，提供多种工具
 ├── stdio-server.py   # 基于标准输入输出的 MCP 服务端
-├── strean-output-server.py # 流式输出服务器
-├── stream-output-client.py # 流式输出客户端
 ├── test.py           # 简单的天气服务测试
 ├── requirements.txt  # 项目依赖
 └── .gitignore        # Git 忽略文件
@@ -87,11 +85,6 @@ python server.py
 python stdio-server.py
 ```
 
-### 启动流式输出服务器
-
-```bash
-uvicorn strean-output-server:app --reload
-```
 
 ### 运行 LLM 客户端
 
